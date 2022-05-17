@@ -1,0 +1,93 @@
+{
+  "nameBuilding": "Test   28.04.2022 -04.05.2022",
+  "program_name": "Creation program",
+  "version_program": "Version (date of the last modification of the program) ",
+  "date_creation_Json": "28.04.2022",
+  "address_building": {
+    "city": "Izhevsk",
+    "streetAddress": "   Krasnogeroyskaya ",
+    "addInfo": "   ------ "
+  },
+  "Level": [
+    {
+      "NameLevel": "Floor # 1",
+      "ZLevel": 500.0,
+      "BuildElement": [
+        {
+          "Name": "Дверь (01 : 47e9) d46c<->",
+          "Id": "0ea7fc46-78cd-9d77-1608-3c60a66b07af",
+          "Sign": "Door",
+          "SizeZ": 2100.0 ,
+          "Wide":    850 ,
+
+          "Output": [
+            "f6069bcd-ed45-f9f3-7469-54b9faa64de2",
+            "00000000"
+          ]
+        },
+        {
+          "Name": "комната 12 (01 : d46c)",
+          "Id": "86e85792-6c90-e889-00ec-0b0de0eb98f9",
+          "Sign": "Door",
+          "SizeZ": 2100.0000000,
+          "Wide": 1050 ,
+          "Sroom": 0.0,
+          "Output": [
+            "f6069bcd-ed45-f9f3-7469-54b9faa64de2",
+            "930280d0-1982-a492-b773-1eec41b42990"
+          ]
+        },
+        {
+          "Name": " l';ij-08 ",
+          "Id": "a5a99729-c1aa-9440-355a-a1b23c8bbd68",
+          "Sign": "Door",
+          "SizeZ": 2070.0000000,
+          "Wide":  950 ,
+          "Sroom": 0.0,
+          "Output": [
+            "52697f34-0abc-4ddd-639b-e5d4f7dd8f03",
+            "930280d0-1982-a492-b773-1eec41b42990"
+          ]
+        },
+        {
+          "Name": "    room-дрп  ",
+          "Id": "f6069bcd-ed45-f9f3-7469-54b9faa64de2",
+          "Sign": "Room",
+          "SizeZ": 2060,
+          "Sroom": 45.25,
+          "Output": []
+        },
+        {
+          "Name": "    чвпо      ",
+          "Id": "52697f34-0abc-4ddd-639b-e5d4f7dd8f03",
+          "Sign": "Staircase",
+          "SizeZ":  4060 ,
+          "Wide":   800    ,
+          "Sroom": 444,
+          "Output": [
+            "f6069bcd-ed45-f9f3-7469-54b9faa64de2",
+            "930280d0-1982-a492-b773-1eec41b42990"
+          ]
+        }
+      ]
+    },
+    {
+       "NameLevel": "Floor # 2",
+       "ZLevel":   2.535 ,
+       "BuildElement": [
+         {
+          "Name": "   юлор   ",
+          "Id": "0ea7fc46-78cd-9d77-1608-3c60a66b07af",
+          "Sign": "Door",
+          "SizeZ":  2010 ,
+          "Wide":   890   ,
+          "Output": [
+                "f6069bcd-ed45-f9f3-7469-54b9faa64de2",
+                "930280d0-1982-a492-b773-1eec41b42990"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
