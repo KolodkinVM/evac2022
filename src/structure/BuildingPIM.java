@@ -55,6 +55,8 @@ public class BuildingPIM {
          for (int kkk = 0; kkk < build.Level[kk].BuildElement.length; kkk++) {
              System.out.println(" build.Level[kk].BuildElement[kkk].Name     " + build.Level[kk].BuildElement[kkk].Name);
              System.out.println(" build.Level[kk].BuildElement[kkk].Id    " + build.Level[kk].BuildElement[kkk].Id);
+             for (int k4 = 0; k4 < build.Level[kk].BuildElement[kkk].Output.length; k4++)
+                 System.out.println("  k4 =         Id =  " + k4 + build.Level[kk].BuildElement[kkk].Output[k4]);
          }
      }
  }

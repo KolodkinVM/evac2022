@@ -4,17 +4,17 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
 import structure.BuildingPIM;
 import graph.Element;
-/*import structure.LightAdd;
-import structure.TransitionAdd;
-import structure.ZoneAdd;*/
+
+import static graph.Element.printlistElement;
 
 
-public class Evacuation {         // 28.04.2014  13.05.2022
+public class Evacuation {         // 28.04.2014  24.05.2022
     // Здание представляется двудольным графом.  Одна совокупность вершин графа -
     // области перемещений людей (помещение, часть помещения, лестница и т.д), вторая совокупность -
     // портал (дверь, проем ...)
@@ -25,8 +25,8 @@ public class Evacuation {         // 28.04.2014  13.05.2022
     public static final double CrPassability = 0.1;		// Критическая проходимость зоны
 
     public static PrintStream out_support; 				// Файл промежуточных результатов
-    public static PrintStream out_results; 				// Файл итоговых результатов
-    public static PrintStream out_total; 				// Файл TOTAL итоговых результатов
+   public static PrintStream out_total; 				// Файл TOTAL итоговых результатов
+    public static PrintStream Out_result;               // Файл итоговых результатов
 
     private static BuildingPIM building;
 
@@ -35,18 +35,24 @@ public class Evacuation {         // 28.04.2014  13.05.2022
         final String jsonLocation = "source/vmtest1.json"; // Json - файл со зданием тестовое здание
         final LoadJson loadingJson = new LoadJson(jsonLocation); // Десериализуем файл json
         building = loadingJson.getBuilding();
-/*        System.out.println( building.nameBuilding);
-        System.out.println( " Evacuation - 40  " + building.program_name);
-        System.out.println( building.version_program);  */
-  //      System.out.println("   Evacuation -42 ");
-        BuildingPIM.printJson(building);
+  //      BuildingPIM.printJson(building);
      //   final ElementsInitialization initElementsLists = new ElementsInitialization(building); // Собираем списки элементов
 //        final StatusBarData barData = new StatusBarData();
 //        System.out.println("   Evacuation -46 ");
         // Подготовка файла для печати результатов (вспомогательная информация)
         System.out.println("   Evacuation -48 "+ outputLocation);
         outputSettings(outputLocation, building);
-        System.out.println("   Evacuation -49 ");
+        ArrayList<Element> listElement = new ArrayList<Element>();
+        listElement = graph.Element.getlistElement(building);
+        Element elemx = listElement.get(1); Element.ElementPrintFile(elemx);
+        Element elemx2 = listElement.get(2); Element.ElementPrintFile(elemx2);
+        Element elemx3 = listElement.get(3); Element.ElementPrintFile(elemx3);
+        Element elemx5 = listElement.get(5); Element.ElementPrintFile(elemx5);
+
+
+
+        Element.printlistElement(listElement);
+        System.out.println("   Evacuation -50 ");
         // --------------------------------------------------------//
 
         final double hxy = 0.5;		// характерный размер области, м
@@ -54,7 +60,7 @@ public class Evacuation {         // 28.04.2014  13.05.2022
         final double vmax = 100; 	// максимальная скорость эвакуации, м/мин
         final double tay = (hxy / vmax) * ktay; 	// мин - Шаг моделирования 100 - максимальная скорость м/мин
         System.out.println("   Evacuation -55 ");
-        building.printJson(building);
+        BuildingPIM.printJson(building);
             System.out.println("   Evacuation -60 ");
         building.printJsonFile(tay,hxy); 			// Печать параметров здания в файл
             System.out.println("   Evacuation -62 ");
@@ -173,10 +179,10 @@ public class Evacuation {         // 28.04.2014  13.05.2022
         // Подготовка файла для печати результатов (результаты)
         final String nameFile_res = nameLocation + nameBuilding + "-" + timestap + "(result).txt".replace("\n", "-");
         try {
-            out_results = new PrintStream(new FileOutputStream(nameFile_res, true), true);
+            Out_result = new PrintStream(new FileOutputStream(nameFile_res, true), true);
         } catch (FileNotFoundException e) {
             try {
-                out_results = new PrintStream(new FileOutputStream(nameFile_res), true);
+                Out_result = new PrintStream(new FileOutputStream(nameFile_res), true);
             } catch (FileNotFoundException e1) {
                 e1.printStackTrace();
                 return;
