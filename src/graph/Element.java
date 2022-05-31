@@ -4,9 +4,8 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import structure.BuildingPIM;
 import evacuate.Evacuation;
-//import evacuate.Identifiers;
 
-public class Element {    //		  26.04.2022       23.05.2022
+public class Element {    //		  26.04.2022       27.05.2022
     //Область Outside (Safety zone) формируется на этапе создания помещений. Это зона вне здания, куда эвакуируются люди)
     public String Id;				// Уникальный Идентификатор элемента
     public double dPeople;			// Количество людей (текущее) в элементе, человек
@@ -30,8 +29,7 @@ public class Element {    //		  26.04.2022       23.05.2022
 
     public Element() {    };
     public Element(String Id, double dPeople,String floor, double ZLevel, double SizeZ, double Wide, String Name, String Sign,
-                   double probability,  int Type, double Sroom, int direct, int ntay, int numberOutput,double timeout,
-                   ArrayList<String> Neigh  )
+                   double probability,  double Sroom, int direct, int ntay, int numberOutput,double timeout )
     {
         this.Id = Id;
         this.dPeople = dPeople;
@@ -45,16 +43,12 @@ public class Element {    //		  26.04.2022       23.05.2022
         this.Sroom = Sroom;
         this.direct = direct;
         this.ntay = ntay;	        this.numberOutput = numberOutput;	        this.timeout = timeout;
-        this.Neigh = Neigh;
-    }
+     }
 
 
     // ********* 24/05/2022 Общий список расчетных элементов (в частном случае помещений+порталов) по зданию
    public static ArrayList<graph.Element> getlistElement(structure.BuildingPIM building) {
        ArrayList<Element> listElement = new ArrayList<Element>();        // Список Element (Общий)
-       listElement.clear();
-       Element elemx = new Element();/*    (0, 0, ZLevelout, 0.0, 0.0, "Outside", "Outside", 0, Sroomout, directx, 0,
-               numberOutputx, 0.0, 0.0, 0, 0);*/
        int kintegral = 0;            // Считаем число элементов в здании
        for (int kk = 0; kk < building.Level.length; kk++) {
            String floorElem = building.Level[kk].NameLevel;
@@ -65,73 +59,58 @@ public class Element {    //		  26.04.2022       23.05.2022
                double dPeopleElem = 0;
                double SizeZElem = building.Level[kk].BuildElement[kkk].SizeZ;
                double WideElem = building.Level[kk].BuildElement[kkk].Wide;
-               String  NameElem = building.Level[kk].BuildElement[kkk].Name;
-               String  SignElem = building.Level[kk].BuildElement[kkk].Sign;
+               String NameElem = building.Level[kk].BuildElement[kkk].Name;
+               String SignElem = building.Level[kk].BuildElement[kkk].Sign;
                double probabilityElem = 1;
                double SroomElem = building.Level[kk].BuildElement[kkk].Sroom;
                int directElem = 0;
                int ntayElem = 0;
                int numberOutputElem = 0;
                double timeoutElem = 0;
-               elemx.Id = idElem;
-               elemx.dPeople = dPeopleElem;
-               elemx.floor  = floorElem;
-               elemx.ZLevel = ZLevelElem;
-               elemx.SizeZ  = SizeZElem;
-               elemx.Wide  = WideElem;
-               elemx.Name  = NameElem;
-               elemx.Sign  = SignElem;
-               elemx.Sroom  = SroomElem;
-               elemx.probability = probabilityElem;
-               elemx.direct  = directElem;
-               elemx.ntay  = ntayElem;
-               elemx.numberOutput  = numberOutputElem;
-               elemx.timeout  = timeoutElem;
-               elemx.Neigh.clear();
-               for (int k4 = 0; k4 < building.Level[kk].BuildElement[kkk].Output.length; k4++)
-               { String NeigtElem = building.Level[kk].BuildElement[kkk].Output[k4];
-                   elemx.Neigh.add(NeigtElem);}
-               System.out.println("Element -95   " + kintegral + "   " + building.Level[kk].BuildElement[kkk].Output.length + "     "   + elemx.Id);
-               listElement.add(elemx);
+               Element elemx = new Element(idElem,dPeopleElem, floorElem, ZLevelElem, SizeZElem, WideElem, NameElem, SignElem,
+                       probabilityElem, SroomElem, directElem,0,0,0 );
+
+               for (int k4 = 0; k4 < building.Level[kk].BuildElement[kkk].Output.length; k4++) {
+                   String NeigtElem = building.Level[kk].BuildElement[kkk].Output[k4];
+                   elemx.Neigh.add(NeigtElem);
                }
+               listElement.add(elemx);
            }
+       }
        return listElement;
    }
 
 
 
             //    ============			Печать характеристик элемента   28.07.2014        24/05/2022
-    public static void ElementPrintFile(Element elemx) {
-        Evacuation.Out_result.print(" Element= "+ elemx.Name+"   Id= "+elemx.Id+"   Sign= "+ elemx.Sign );
+    public static void ElementPrintFile(graph.Element elemx) {
+        Evacuation.Out_result.print(" Element-111= "+ elemx.Name+"   Id= "+elemx.Id+"   Sign= "+ elemx.Sign );
         Evacuation.Out_result.println(" dPeople= "+ elemx.dPeople+"   Sroom= "+elemx.Sroom +"  Channel ="+elemx.numberOutput);
-        Evacuation.Out_result.println(" List of Neigh = "  );
-        for(int k=0; k< elemx.Neigh.size(); k++) Evacuation.Out_result.print("   "+ elemx.Neigh.get(k));
+        Evacuation.Out_result.println(" (Elem90) List of Neigh = "  );
+        for(int k=0; k< elemx.Neigh.size(); k++) Evacuation.Out_result.print(" ::  "+ elemx.Neigh.get(k));
         Evacuation.Out_result.println();     }
 
 
-    //    ============     13/05/2014											24/05/2022
+    //    ============     13/05/2014											31/05/2022
     public static void printlistElement(ArrayList<Element> listElement) {
-        Evacuation.Out_result.println("   List of Elements " );
-        Evacuation.Out_result.print("                 Id                                         ");
-        Evacuation.Out_result.println("            ZLevel       SizeZ     Wide            Name	          Sign");
-        for (Element xElem : listElement) {
+        Evacuation.Out_result.println("   (Element -96) Amount of Elements  " + listElement.size());
+        Element xElem = new Element();
+        Evacuation.Out_result.print("                Id                                         ");
+        Evacuation.Out_result.println("        ZLevel       SizeZ     Wide            Name	          Sign");
+ //       for (Element xElem : listElement) {
+           for (int k = 0; k < listElement.size(); k++ ) { xElem = listElement.get(k);
+               Evacuation.Out_result.print(" k= "+k);
  		Evacuation.Out_result.format(" %1$40s     %2$5.1f      %3$5.1f  %4$5.1f        %5$20s   %6$10s   %n",
 				xElem.Id, xElem.ZLevel, xElem.SizeZ, xElem.Wide, xElem.Name, xElem.Sign  );
-  //         Evacuation.Out_result.format("  %1$10s   %2$5.1f  %3$5.1f  %4$5.1f  %5$11s %6$5.1f  %7$3.1f %8$43s    ",
-   //                xElem.Id, xElem.dPeople, xElem.Sroom,  xElem.Wide,  xElem.Sign, xElem.ZLevel, xElem.SizeZ, xElem.Name	 );
-            //	Evacuation.Out_result.print("          //	");
-
               Evacuation.Out_result.println("   List of Neigh " );
-            for(int k=0; k< xElem.Neigh.size(); k++) Evacuation.Out_result.print("  "+ xElem.Neigh.get(k)+"   ");
+            for(int kN=0; kN <xElem.Neigh.size(); kN++) Evacuation.Out_result.print("  "+ xElem.Neigh.get(kN)+"   ");
             Evacuation.Out_result.println();}
     }
 }		// end of class
 
 
 
-
-
-    // ********* 12/05/2014 Общий список расчетных элементов (в частном случае помещений+порталов) по зданию
+// ********* 12/05/2014 Общий список расчетных элементов (в частном случае помещений+порталов) по зданию
  /*   public ArrayList<graph.Element> getlistElement(VMjson building) {
         int kintegral = 1;			// Считаем число элементов в здании
 

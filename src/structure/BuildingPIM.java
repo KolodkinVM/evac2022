@@ -44,26 +44,22 @@ public class BuildingPIM {
 
 
  public static void printJson(BuildingPIM build) {
-     System.out.println("   BuildingPIM -48 ");
-     //    BuildingPIM build = new BuildingPIM();
-     System.out.println("  BuildingPIM -49    	nameBuilding  " + build.nameBuilding);
-     System.out.println("  BuildingPIM -50       program_name  " + build.program_name);
-
-     for (int kk = 0; kk < build.Level.length; kk++) {
+     System.out.println("  (BuildingPIM -47)   	nameBuilding  " + build.nameBuilding+"     program_name  " + build.program_name);
+      for (int kk = 0; kk < build.Level.length; kk++) {
          System.out.println(" Level[kk].NameLevel    " + build.Level[kk].NameLevel);
          System.out.println(" Level[kk].ZLevel    " + build.Level[kk].ZLevel + " mm");
          for (int kkk = 0; kkk < build.Level[kk].BuildElement.length; kkk++) {
              System.out.println(" build.Level[kk].BuildElement[kkk].Name     " + build.Level[kk].BuildElement[kkk].Name);
              System.out.println(" build.Level[kk].BuildElement[kkk].Id    " + build.Level[kk].BuildElement[kkk].Id);
              for (int k4 = 0; k4 < build.Level[kk].BuildElement[kkk].Output.length; k4++)
-                 System.out.println("  k4 =         Id =  " + k4 + build.Level[kk].BuildElement[kkk].Output[k4]);
+                 System.out.println("  k4 = , Id =  " + k4 + " ,   "+build.Level[kk].BuildElement[kkk].Output[k4]);
          }
      }
  }
 
     public void printJsonFile(double tay, double hxy) {
         DecimalFormat f1 = new DecimalFormat("#.000");
-        for (String s : Arrays.asList("  Идентификатор здания		 		" + nameBuilding,
+        for (String s : Arrays.asList(" BuildingPIM-62 Идентификатор здания		 		" + nameBuilding,
                 "  Программа создания  "   +  program_name,  "  Версия программы "   +  version_program,
                 "  Дата создания программы "   +  date_creation_Json,
                 "  Шаг моделирования - tay,  мин = 	" + f1.format(tay), "  Шаг по пространству - hxy, м = 	" + f1.format(hxy))) {

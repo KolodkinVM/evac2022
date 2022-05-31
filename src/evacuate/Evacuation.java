@@ -14,12 +14,12 @@ import graph.Element;
 import static graph.Element.printlistElement;
 
 
-public class Evacuation {         // 28.04.2014  24.05.2022
+public class Evacuation {         // 28.04.2014  31.05.2022
     // Здание представляется двудольным графом.  Одна совокупность вершин графа -
     // области перемещений людей (помещение, часть помещения, лестница и т.д), вторая совокупность -
     // портал (дверь, проем ...)
 
-    // Коэфф., определяющий макс. плотность в ячейке (площадь гориз. проекции человека, м2/чел)
+                            // Коэфф., определяющий макс. плотность в ячейке (площадь гориз. проекции человека, м2/чел)
     public static final double FP = 0.113;
     public final static double NUMBER_OF_PEOPLE = 200; 	// Количество людей в здании
     public static final double CrPassability = 0.1;		// Критическая проходимость зоны
@@ -32,26 +32,19 @@ public class Evacuation {         // 28.04.2014  24.05.2022
 
     public static void main(String[] args) {
         final String outputLocation = "C:/Users/KolodkinVM/Documents/A3-Work2022/"; // Директория локализации файлов с результатами
-        final String jsonLocation = "source/vmtest1.json"; // Json - файл со зданием тестовое здание
+        final String jsonLocation = "source/vmtest2.json"; // Json - файл со зданием тестовое здание
         final LoadJson loadingJson = new LoadJson(jsonLocation); // Десериализуем файл json
         building = loadingJson.getBuilding();
-  //      BuildingPIM.printJson(building);
+        BuildingPIM.printJson(building);
+
      //   final ElementsInitialization initElementsLists = new ElementsInitialization(building); // Собираем списки элементов
 //        final StatusBarData barData = new StatusBarData();
-//        System.out.println("   Evacuation -46 ");
         // Подготовка файла для печати результатов (вспомогательная информация)
-        System.out.println("   Evacuation -48 "+ outputLocation);
-        outputSettings(outputLocation, building);
+
+        outputSettings(outputLocation, building);   // Директория локализации файлов с результатами
         ArrayList<Element> listElement = new ArrayList<Element>();
-        listElement = graph.Element.getlistElement(building);
-        Element elemx = listElement.get(1); Element.ElementPrintFile(elemx);
-        Element elemx2 = listElement.get(2); Element.ElementPrintFile(elemx2);
-        Element elemx3 = listElement.get(3); Element.ElementPrintFile(elemx3);
-        Element elemx5 = listElement.get(5); Element.ElementPrintFile(elemx5);
-
-
-
-        Element.printlistElement(listElement);
+        listElement = graph.Element.getlistElement(building);   // Формирование общего списка элементов
+        Element.printlistElement(listElement);                  // Печать списка элементов
         System.out.println("   Evacuation -50 ");
         // --------------------------------------------------------//
 
@@ -59,9 +52,7 @@ public class Evacuation {         // 28.04.2014  24.05.2022
         final double ktay = 0.5; 	// коэффициент (<1) уменьшения шага по времени для устойчивости расчетов
         final double vmax = 100; 	// максимальная скорость эвакуации, м/мин
         final double tay = (hxy / vmax) * ktay; 	// мин - Шаг моделирования 100 - максимальная скорость м/мин
-        System.out.println("   Evacuation -55 ");
-        BuildingPIM.printJson(building);
-            System.out.println("   Evacuation -60 ");
+        System.out.println("   Evacuation -60 ");
         building.printJsonFile(tay,hxy); 			// Печать параметров здания в файл
             System.out.println("   Evacuation -62 ");
 /*
@@ -204,4 +195,10 @@ public class Evacuation {         // 28.04.2014  24.05.2022
     }
 
 }
+/*    Хлам    220527
+    Element elemx1 = listElement.get(1); Element.ElementPrintFile(elemx1);
+        Element elemx2 = listElement.get(2); Element.ElementPrintFile(elemx2);
+        Element elemx3 = listElement.get(3); Element.ElementPrintFile(elemx3);
+        Element elemx4 = listElement.get(4); Element.ElementPrintFile(elemx4);
 
+ */
