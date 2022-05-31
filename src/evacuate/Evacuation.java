@@ -35,7 +35,7 @@ public class Evacuation {         // 28.04.2014  31.05.2022
         final String jsonLocation = "source/vmtest2.json"; // Json - файл со зданием тестовое здание
         final LoadJson loadingJson = new LoadJson(jsonLocation); // Десериализуем файл json
         building = loadingJson.getBuilding();
-        BuildingPIM.printJson(building);
+        BuildingPIM.printJson(building); // lkjtg
 
      //   final ElementsInitialization initElementsLists = new ElementsInitialization(building); // Собираем списки элементов
 //        final StatusBarData barData = new StatusBarData();
