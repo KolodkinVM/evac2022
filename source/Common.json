@@ -2,7 +2,7 @@
     "nameBuilding": "Udsu",
     "program_name": "Программа создания файла JSON",
     "version_program": "1.2",
-    "date_creation_Json": "2022-06-06 16:01:56.352290",
+    "date_creation_Json": "2022-06-06 16:44:08.376092",
     "address_building": {
         "city": "",
         "streetAddress": "",
@@ -11,7 +11,7 @@
     "Level": [
         {
             "NameLevel": "Подвал",
-            "ZLevel": "Подвал",
+            "ZLevel": 0.0,
             "BuildElement": [
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
@@ -1459,7 +1459,7 @@
         },
         {
             "NameLevel": "3 этаж",
-            "ZLevel": "3 этаж",
+            "ZLevel": 11400.0,
             "BuildElement": [
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
@@ -2404,202 +2404,754 @@
             ]
         },
         {
-            "NameLevel": "-1 Подвал",
-            "ZLevel": "",
+            "NameLevel": "2 этаж",
+            "ZLevel": 7600.0,
             "BuildElement": [
                 {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "dd80cb39-e131-4437-aaf4-19235451928c",
+                    "Name": "Дверь - (нет): 2 200,00 мм x 2 100,00 мм",
+                    "Id": "472b51a5-ea05-48b4-8398-7c9191309602",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
-                    "Wide": 900.0,
+                    "Wide": 2200.0,
                     "Output": [
-                        "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad",
-                        "b2db1a17-4abd-48c7-8074-886ca6cfd8ea"
+                        "419dc2b9-2d52-4366-9827-d868a06e7121",
+                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 2 200,00 мм x 2 100,00 мм",
+                    "Id": "202eaf26-ac5c-410d-a04d-88c07d1cc84d",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 2200.0,
+                    "Output": [
+                        "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
+                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "eefb5066-1791-4d28-98f2-ba1f87707b64",
+                    "Id": "1662c792-0858-42c1-bc66-c0d3b3db78c7",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "202345a2-de73-4ebb-834d-ba8eb1c16e66",
-                        "46e0c464-791e-4e3c-8303-e362236bedba"
+                        "f0298772-2224-476f-88ab-9f99dfc05c9b",
+                        "4b009e1a-b40f-417e-beec-1e2ac680d659"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "c50c8f7c-91cd-4700-9711-6cfe374c25ad",
+                    "Id": "5cc44b32-0bec-4b22-b972-babe54518f10",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "e1bc4e86-987c-4ca5-a6ab-e56c6283b1e6",
-                        "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad"
+                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
+                        "a8f9093e-df28-4f3c-8117-0e5f594dd09c"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "962817b9-d50b-4530-b890-4d2e54baab54",
+                    "Id": "2d435fc9-1b00-49fb-8c09-c727e42b68cb",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad",
-                        "2bd29766-f6b0-4277-8645-39f16d0984b0"
+                        "a8f9093e-df28-4f3c-8117-0e5f594dd09c",
+                        "a9c1dd08-bc4e-46b4-961a-9892bbb91792"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "9ef4ea4e-8b55-4729-8a2c-832ef36ca4da",
+                    "Id": "dda2b9b6-dcd9-4351-be89-65eab0968250",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "b2db1a17-4abd-48c7-8074-886ca6cfd8ea",
-                        "7e20e1f1-03b5-47b9-b758-2cbe62a6db19"
+                        "633d3232-a64b-4acd-bc5d-06b8745294f1",
+                        "05887f4b-ab63-49bb-94b4-6e21350f6edf"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "8a7df27d-91e3-4185-999c-d85b65c25e29",
+                    "Id": "d517f7f6-79d5-422e-93da-6cb24f52bee1",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "ca0f2ea8-5c6e-4481-88f3-52cbdd9e107f",
-                        "e1bc4e86-987c-4ca5-a6ab-e56c6283b1e6"
+                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
+                        "6816b054-ea64-44e8-a58b-f7d8d698d0cf"
                     ]
                 },
                 {
-                    "Name": "Дверь - (нет): 1 450,00 мм x 3 590,00 мм",
-                    "Id": "95f73ce7-8af7-4d92-887a-577c59a47ae5",
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "f80ceda2-8bd7-4d85-8501-72d363d08945",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
+                        "633d3232-a64b-4acd-bc5d-06b8745294f1"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "66bff5e5-be13-49ec-a029-928bf6f7bf69",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "f0298772-2224-476f-88ab-9f99dfc05c9b",
+                        "b82331c0-5e93-4e0f-9644-f03522a860de"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "3d37e1a5-d5de-48b7-aaea-b70195730d72",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
+                        "18ed65e9-a727-494f-96a3-43d99166f8e4"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "db398ffd-9af3-4824-93fb-10a2269f2cf2",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
+                        "85b0b0ce-0e3a-4e3c-8d9d-dbbc179a4cb0"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "7a7d4052-4611-4ff5-805d-5f76461c64f5",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
+                        "50258f99-5c61-470c-bf50-b5e6b5eba2b8"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "f87c363f-ad15-4f9a-a4bf-f395e81b7007",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
+                        "6dfc8412-8772-4663-8b54-6463ce9129d1"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "4a126e10-23bb-494c-8a98-8f9b5fa528d9",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
+                        "d7ddc071-421c-44f5-a3ee-4a46d1d34aa6"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "0b435d9a-6b71-42f5-90de-4ae346777634",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
+                        "3f2f2aa1-32d9-48c0-a1bb-2b0657037fe0"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "15d34a7c-ab6b-4dcf-8cc8-3a899ce959db",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "7911c70c-f2bb-4ad2-b1bc-0f7bf86a033f",
+                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "a187ee33-868b-439c-8c83-20cae769d5df",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "868887f2-757d-4524-8325-48a04c5fe1bd",
+                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "07ab54d5-1b2b-4142-8685-11c38508c9ac",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "439f8eb8-91cb-400d-b846-e20b16609794",
+                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "6e6b303c-0d69-4a25-b6c9-f74ad7baa23e",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "439f8eb8-91cb-400d-b846-e20b16609794",
+                        "88bf9190-f0bf-4f6f-8b6d-e71dac622f1f"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "4abb50bc-d90f-4b71-b256-cb6def97fbc1",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "88bf9190-f0bf-4f6f-8b6d-e71dac622f1f",
+                        "51032b14-4be7-4ab2-9445-99913464131d"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "e62dbe01-8793-4e31-8664-0ad4d7aa6671",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "7911c70c-f2bb-4ad2-b1bc-0f7bf86a033f",
+                        "f01d1af6-dfeb-43be-aae4-a4fa47ebd63d"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
+                    "Id": "512b4587-3ea8-464a-a43b-27d477c86ef3",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 2100.0,
+                    "Wide": 900.0,
+                    "Output": [
+                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
+                        "a30184ec-c799-448d-8024-90741b744769"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
+                    "Id": "ec3094f7-4006-4eb2-bf74-bac402e6b9be",
                     "Sign": "DoorWayInt",
                     "SizeZ": 3590.0,
-                    "Wide": 1450.0,
+                    "Wide": 1500.0,
                     "Output": [
-                        "9b2524dc-c42d-409e-8957-a0435fc99f4f",
-                        "ca0f2ea8-5c6e-4481-88f3-52cbdd9e107f"
+                        "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
+                        "85391e3d-08a5-4565-a910-31a8d3ba2190"
                     ]
                 },
                 {
-                    "Id": "e1bc4e86-987c-4ca5-a6ab-e56c6283b1e6",
-                    "Name": "1 - Коридор",
+                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
+                    "Id": "c094f8be-5901-4714-8587-e0a7e3f5491f",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 3590.0,
+                    "Wide": 1500.0,
                     "Output": [
-                        "c50c8f7c-91cd-4700-9711-6cfe374c25ad",
-                        "8a7df27d-91e3-4185-999c-d85b65c25e29"
+                        "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
+                        "357acdd7-9f1a-4ed6-bfd6-cc4f47ff0eab"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
+                    "Id": "02f3b2ba-80bb-4453-970e-e328e039fa86",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 3590.0,
+                    "Wide": 1500.0,
+                    "Output": [
+                        "419dc2b9-2d52-4366-9827-d868a06e7121",
+                        "a9f5cd10-ea96-4c56-8961-21aaf9c2307b"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
+                    "Id": "1a5a009e-7b0e-49da-aefd-6a6083781682",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 3590.0,
+                    "Wide": 1500.0,
+                    "Output": [
+                        "419dc2b9-2d52-4366-9827-d868a06e7121",
+                        "7747964e-b755-40ee-aaad-7651a285017a"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 1 409,00 мм x 3 590,00 мм",
+                    "Id": "15ed8ce5-645c-42a7-909e-5684c06c5ccf",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 3590.0,
+                    "Wide": 1409.0,
+                    "Output": [
+                        "f0298772-2224-476f-88ab-9f99dfc05c9b",
+                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 2 479,00 мм x 3 590,00 мм",
+                    "Id": "4daf1fc9-3e39-4f84-8e71-41550c0f6b81",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 3590.0,
+                    "Wide": 2479.0,
+                    "Output": [
+                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
+                        "f0298772-2224-476f-88ab-9f99dfc05c9b"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 2 479,00 мм x 3 590,00 мм",
+                    "Id": "42f78a90-1d3e-4e21-a7c2-6262a2fc13cb",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 3590.0,
+                    "Wide": 2479.0,
+                    "Output": [
+                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
+                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef"
+                    ]
+                },
+                {
+                    "Name": "Дверь - (нет): 1 489,00 мм x 3 590,00 мм",
+                    "Id": "c70272c3-75aa-4c99-847d-7306e2b64532",
+                    "Sign": "DoorWayInt",
+                    "SizeZ": 3590.0,
+                    "Wide": 1489.0,
+                    "Output": [
+                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
+                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
+                    ]
+                },
+                {
+                    "Id": "4b009e1a-b40f-417e-beec-1e2ac680d659",
+                    "Name": "1 - Класс",
+                    "Output": [
+                        "1662c792-0858-42c1-bc66-c0d3b3db78c7"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 9.794,
+                    "Sroom": 49.8294,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "2bd29766-f6b0-4277-8645-39f16d0984b0",
-                    "Name": "2 - Электрощитовая",
+                    "Id": "b82331c0-5e93-4e0f-9644-f03522a860de",
+                    "Name": "2 - Класс",
                     "Output": [
-                        "962817b9-d50b-4530-b890-4d2e54baab54"
+                        "66bff5e5-be13-49ec-a029-928bf6f7bf69"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 5.9,
+                    "Sroom": 48.4747,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "b2db1a17-4abd-48c7-8074-886ca6cfd8ea",
-                    "Name": "3 - Склад",
+                    "Id": "18ed65e9-a727-494f-96a3-43d99166f8e4",
+                    "Name": "3 - Класс",
                     "Output": [
-                        "dd80cb39-e131-4437-aaf4-19235451928c",
-                        "9ef4ea4e-8b55-4729-8a2c-832ef36ca4da"
+                        "3d37e1a5-d5de-48b7-aaea-b70195730d72"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 61.04,
+                    "Sroom": 48.0624,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "7e20e1f1-03b5-47b9-b758-2cbe62a6db19",
-                    "Name": "4 - Склад",
+                    "Id": "85b0b0ce-0e3a-4e3c-8d9d-dbbc179a4cb0",
+                    "Name": "4 - Класс",
                     "Output": [
-                        "9ef4ea4e-8b55-4729-8a2c-832ef36ca4da"
+                        "db398ffd-9af3-4824-93fb-10a2269f2cf2"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 14.88,
+                    "Sroom": 47.8857,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad",
-                    "Name": "5 - Венткамера",
+                    "Id": "6dfc8412-8772-4663-8b54-6463ce9129d1",
+                    "Name": "6 - Класс",
                     "Output": [
-                        "dd80cb39-e131-4437-aaf4-19235451928c",
-                        "c50c8f7c-91cd-4700-9711-6cfe374c25ad",
-                        "962817b9-d50b-4530-b890-4d2e54baab54"
+                        "f87c363f-ad15-4f9a-a4bf-f395e81b7007"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 73.416,
+                    "Sroom": 48.4747,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "46e0c464-791e-4e3c-8303-e362236bedba",
-                    "Name": "6 - Лыжная база",
+                    "Id": "d7ddc071-421c-44f5-a3ee-4a46d1d34aa6",
+                    "Name": "7 - Класс",
                     "Output": [
-                        "eefb5066-1791-4d28-98f2-ba1f87707b64"
+                        "4a126e10-23bb-494c-8a98-8f9b5fa528d9"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 81.176,
+                    "Sroom": 46.9433,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "ca0f2ea8-5c6e-4481-88f3-52cbdd9e107f",
-                    "Name": "1 - Помещение",
+                    "Id": "3f2f2aa1-32d9-48c0-a1bb-2b0657037fe0",
+                    "Name": "8 - Класс",
                     "Output": [
-                        "8a7df27d-91e3-4185-999c-d85b65c25e29",
-                        "95f73ce7-8af7-4d92-887a-577c59a47ae5"
+                        "0b435d9a-6b71-42f5-90de-4ae346777634"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 49.7705,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "50258f99-5c61-470c-bf50-b5e6b5eba2b8",
+                    "Name": "5 - Класс",
+                    "Output": [
+                        "7a7d4052-4611-4ff5-805d-5f76461c64f5"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 48.298,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "439f8eb8-91cb-400d-b846-e20b16609794",
+                    "Name": "9 - Умывальная",
+                    "Output": [
+                        "07ab54d5-1b2b-4142-8685-11c38508c9ac",
+                        "6e6b303c-0d69-4a25-b6c9-f74ad7baa23e"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 2.9535,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "51032b14-4be7-4ab2-9445-99913464131d",
+                    "Name": "10 - Туалет",
+                    "Output": [
+                        "4abb50bc-d90f-4b71-b256-cb6def97fbc1"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 1.1216043,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "88bf9190-f0bf-4f6f-8b6d-e71dac622f1f",
+                    "Name": "11 - Туалет",
+                    "Output": [
+                        "6e6b303c-0d69-4a25-b6c9-f74ad7baa23e",
+                        "4abb50bc-d90f-4b71-b256-cb6def97fbc1"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 4.3307454,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "f01d1af6-dfeb-43be-aae4-a4fa47ebd63d",
+                    "Name": "12 - Туалет",
+                    "Output": [
+                        "e62dbe01-8793-4e31-8664-0ad4d7aa6671"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 5.6088,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "868887f2-757d-4524-8325-48a04c5fe1bd",
+                    "Name": "13 - Кладовая",
+                    "Output": [
+                        "a187ee33-868b-439c-8c83-20cae769d5df"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 2.7745,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "7911c70c-f2bb-4ad2-b1bc-0f7bf86a033f",
+                    "Name": "14 - Умывальная",
+                    "Output": [
+                        "15d34a7c-ab6b-4dcf-8cc8-3a899ce959db",
+                        "e62dbe01-8793-4e31-8664-0ad4d7aa6671"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 2.9535,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
+                    "Name": "15 - Коридор",
+                    "Output": [
+                        "472b51a5-ea05-48b4-8398-7c9191309602",
+                        "202eaf26-ac5c-410d-a04d-88c07d1cc84d",
+                        "3d37e1a5-d5de-48b7-aaea-b70195730d72",
+                        "db398ffd-9af3-4824-93fb-10a2269f2cf2",
+                        "7a7d4052-4611-4ff5-805d-5f76461c64f5",
+                        "4daf1fc9-3e39-4f84-8e71-41550c0f6b81",
+                        "42f78a90-1d3e-4e21-a7c2-6262a2fc13cb"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 92.8636,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "a8f9093e-df28-4f3c-8117-0e5f594dd09c",
+                    "Name": "16 - Коридор",
+                    "Output": [
+                        "5cc44b32-0bec-4b22-b972-babe54518f10",
+                        "2d435fc9-1b00-49fb-8c09-c727e42b68cb"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 2.839,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "a9c1dd08-bc4e-46b4-961a-9892bbb91792",
+                    "Name": "17 - Кабинет",
+                    "Output": [
+                        "2d435fc9-1b00-49fb-8c09-c727e42b68cb"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 6.00355,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "05887f4b-ab63-49bb-94b4-6e21350f6edf",
+                    "Name": "18 - Подсобная",
+                    "Output": [
+                        "dda2b9b6-dcd9-4351-be89-65eab0968250"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 6.36055,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "633d3232-a64b-4acd-bc5d-06b8745294f1",
+                    "Name": "20 - Умывальная",
+                    "Output": [
+                        "dda2b9b6-dcd9-4351-be89-65eab0968250",
+                        "f80ceda2-8bd7-4d85-8501-72d363d08945"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 2.839,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "6816b054-ea64-44e8-a58b-f7d8d698d0cf",
+                    "Name": "21 - Санузел",
+                    "Output": [
+                        "d517f7f6-79d5-422e-93da-6cb24f52bee1"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 2.74715,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "a30184ec-c799-448d-8024-90741b744769",
+                    "Name": "24 - Гардероб",
+                    "Output": [
+                        "512b4587-3ea8-464a-a43b-27d477c86ef3"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 3600.0,
+                    "Sroom": 9.3324,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
+                    "Name": "15 - Коридор",
+                    "Output": [
+                        "f87c363f-ad15-4f9a-a4bf-f395e81b7007",
+                        "4a126e10-23bb-494c-8a98-8f9b5fa528d9",
+                        "0b435d9a-6b71-42f5-90de-4ae346777634",
+                        "512b4587-3ea8-464a-a43b-27d477c86ef3",
+                        "42f78a90-1d3e-4e21-a7c2-6262a2fc13cb",
+                        "c70272c3-75aa-4c99-847d-7306e2b64532"
                     ],
                     "Sign": "Room",
                     "SizeZ": 2800.0,
-                    "Sroom": 2.9795,
+                    "Sroom": 84.5384,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Name": "Лестница: 20 шт x 300,00 мм x 190,00 мм",
+                    "Id": "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a",
+                    "Name": "15 - Коридор",
+                    "Output": [
+                        "15d34a7c-ab6b-4dcf-8cc8-3a899ce959db",
+                        "a187ee33-868b-439c-8c83-20cae769d5df",
+                        "07ab54d5-1b2b-4142-8685-11c38508c9ac",
+                        "c70272c3-75aa-4c99-847d-7306e2b64532"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 2800.0,
+                    "Sroom": 7.599,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "f0298772-2224-476f-88ab-9f99dfc05c9b",
+                    "Name": "15 - Коридор",
+                    "Output": [
+                        "1662c792-0858-42c1-bc66-c0d3b3db78c7",
+                        "66bff5e5-be13-49ec-a029-928bf6f7bf69",
+                        "15ed8ce5-645c-42a7-909e-5684c06c5ccf",
+                        "4daf1fc9-3e39-4f84-8e71-41550c0f6b81"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 2800.0,
+                    "Sroom": 94.1472,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
+                    "Name": "15 - Коридор",
+                    "Output": [
+                        "5cc44b32-0bec-4b22-b972-babe54518f10",
+                        "d517f7f6-79d5-422e-93da-6cb24f52bee1",
+                        "f80ceda2-8bd7-4d85-8501-72d363d08945",
+                        "15ed8ce5-645c-42a7-909e-5684c06c5ccf"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 2800.0,
+                    "Sroom": 7.67745,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "419dc2b9-2d52-4366-9827-d868a06e7121",
+                    "Name": "1 - Помещение",
+                    "Output": [
+                        "472b51a5-ea05-48b4-8398-7c9191309602",
+                        "02f3b2ba-80bb-4453-970e-e328e039fa86",
+                        "1a5a009e-7b0e-49da-aefd-6a6083781682"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 2800.0,
+                    "Sroom": 4.466,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Id": "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
+                    "Name": "1 - Помещение",
+                    "Output": [
+                        "202eaf26-ac5c-410d-a04d-88c07d1cc84d",
+                        "ec3094f7-4006-4eb2-bf74-bac402e6b9be",
+                        "c094f8be-5901-4714-8587-e0a7e3f5491f"
+                    ],
+                    "Sign": "Room",
+                    "SizeZ": 2800.0,
+                    "Sroom": 4.466,
+                    "Type": 0,
+                    "NumPeople": 0,
+                    "SignScenario": 0
+                },
+                {
+                    "Name": "Лестница: 20 шт x 350,00 мм x 190,00 мм",
                     "SignScenario": 0,
-                    "Id": "9b2524dc-c42d-409e-8957-a0435fc99f4f",
+                    "Id": "85391e3d-08a5-4565-a910-31a8d3ba2190",
                     "Sign": "Staircase",
                     "Type": 0,
                     "SizeZ": 3800.0,
-                    "Wide": 1450.0,
-                    "Sroom": 14.2958172,
+                    "Wide": 1500.0,
+                    "Sroom": 16.2853385,
                     "NumPeople": 0,
                     "Output": [
-                        "94228dfa-a6fd-4b40-b5e6-66d266269d5b",
-                        "95f73ce7-8af7-4d92-887a-577c59a47ae5"
+                        "cc1f1f2e-513e-4ae3-94dd-ffe33c3a4b66",
+                        "ec3094f7-4006-4eb2-bf74-bac402e6b9be"
+                    ]
+                },
+                {
+                    "Name": "Лестница: 20 шт x 350,00 мм x 190,00 мм",
+                    "SignScenario": 0,
+                    "Id": "a9f5cd10-ea96-4c56-8961-21aaf9c2307b",
+                    "Sign": "Staircase",
+                    "Type": 0,
+                    "SizeZ": 3800.0,
+                    "Wide": 1500.0,
+                    "Sroom": 16.2853385,
+                    "NumPeople": 0,
+                    "Output": [
+                        "0f51de4f-b4b2-4d22-94e1-2714dae2c26e",
+                        "02f3b2ba-80bb-4453-970e-e328e039fa86"
                     ]
                 }
             ]
         },
         {
             "NameLevel": "4 этаж",
-            "ZLevel": "4 этаж",
+            "ZLevel": 15200.0,
             "BuildElement": [
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
@@ -3340,7 +3892,7 @@
         },
         {
             "NameLevel": "1 этаж",
-            "ZLevel": "1 этаж",
+            "ZLevel": 3800.0,
             "BuildElement": [
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
@@ -5235,8 +5787,8 @@
                     "Sroom": 16.2853385,
                     "NumPeople": 0,
                     "Output": [
-                        "7032445f-e1a7-4998-bf6d-133de2c3f714",
-                        "c094f8be-5901-4714-8587-e0a7e3f5491f"
+                        "c094f8be-5901-4714-8587-e0a7e3f5491f",
+                        "7032445f-e1a7-4998-bf6d-133de2c3f714"
                     ]
                 },
                 {
@@ -5250,754 +5802,202 @@
                     "Sroom": 16.2853385,
                     "NumPeople": 0,
                     "Output": [
-                        "1f280d74-a1ac-405d-b76b-72491f19114f",
-                        "1a5a009e-7b0e-49da-aefd-6a6083781682"
+                        "1a5a009e-7b0e-49da-aefd-6a6083781682",
+                        "1f280d74-a1ac-405d-b76b-72491f19114f"
                     ]
                 }
             ]
         },
         {
-            "NameLevel": "2 этаж",
-            "ZLevel": "2 этаж",
+            "NameLevel": "-1 Подвал",
+            "ZLevel": -3800.0,
             "BuildElement": [
                 {
-                    "Name": "Дверь - (нет): 2 200,00 мм x 2 100,00 мм",
-                    "Id": "472b51a5-ea05-48b4-8398-7c9191309602",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 2200.0,
-                    "Output": [
-                        "419dc2b9-2d52-4366-9827-d868a06e7121",
-                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 2 200,00 мм x 2 100,00 мм",
-                    "Id": "202eaf26-ac5c-410d-a04d-88c07d1cc84d",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 2200.0,
-                    "Output": [
-                        "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
-                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1"
-                    ]
-                },
-                {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "1662c792-0858-42c1-bc66-c0d3b3db78c7",
+                    "Id": "dd80cb39-e131-4437-aaf4-19235451928c",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "f0298772-2224-476f-88ab-9f99dfc05c9b",
-                        "4b009e1a-b40f-417e-beec-1e2ac680d659"
+                        "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad",
+                        "b2db1a17-4abd-48c7-8074-886ca6cfd8ea"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "5cc44b32-0bec-4b22-b972-babe54518f10",
+                    "Id": "eefb5066-1791-4d28-98f2-ba1f87707b64",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
-                        "a8f9093e-df28-4f3c-8117-0e5f594dd09c"
+                        "202345a2-de73-4ebb-834d-ba8eb1c16e66",
+                        "46e0c464-791e-4e3c-8303-e362236bedba"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "2d435fc9-1b00-49fb-8c09-c727e42b68cb",
+                    "Id": "c50c8f7c-91cd-4700-9711-6cfe374c25ad",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "a8f9093e-df28-4f3c-8117-0e5f594dd09c",
-                        "a9c1dd08-bc4e-46b4-961a-9892bbb91792"
+                        "e1bc4e86-987c-4ca5-a6ab-e56c6283b1e6",
+                        "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "dda2b9b6-dcd9-4351-be89-65eab0968250",
+                    "Id": "962817b9-d50b-4530-b890-4d2e54baab54",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "633d3232-a64b-4acd-bc5d-06b8745294f1",
-                        "05887f4b-ab63-49bb-94b4-6e21350f6edf"
+                        "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad",
+                        "2bd29766-f6b0-4277-8645-39f16d0984b0"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "d517f7f6-79d5-422e-93da-6cb24f52bee1",
+                    "Id": "9ef4ea4e-8b55-4729-8a2c-832ef36ca4da",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
-                        "6816b054-ea64-44e8-a58b-f7d8d698d0cf"
+                        "b2db1a17-4abd-48c7-8074-886ca6cfd8ea",
+                        "7e20e1f1-03b5-47b9-b758-2cbe62a6db19"
                     ]
                 },
                 {
                     "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "f80ceda2-8bd7-4d85-8501-72d363d08945",
+                    "Id": "8a7df27d-91e3-4185-999c-d85b65c25e29",
                     "Sign": "DoorWayInt",
                     "SizeZ": 2100.0,
                     "Wide": 900.0,
                     "Output": [
-                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
-                        "633d3232-a64b-4acd-bc5d-06b8745294f1"
+                        "ca0f2ea8-5c6e-4481-88f3-52cbdd9e107f",
+                        "e1bc4e86-987c-4ca5-a6ab-e56c6283b1e6"
                     ]
                 },
                 {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "66bff5e5-be13-49ec-a029-928bf6f7bf69",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "f0298772-2224-476f-88ab-9f99dfc05c9b",
-                        "b82331c0-5e93-4e0f-9644-f03522a860de"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "3d37e1a5-d5de-48b7-aaea-b70195730d72",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
-                        "18ed65e9-a727-494f-96a3-43d99166f8e4"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "db398ffd-9af3-4824-93fb-10a2269f2cf2",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
-                        "85b0b0ce-0e3a-4e3c-8d9d-dbbc179a4cb0"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "7a7d4052-4611-4ff5-805d-5f76461c64f5",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
-                        "50258f99-5c61-470c-bf50-b5e6b5eba2b8"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "f87c363f-ad15-4f9a-a4bf-f395e81b7007",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
-                        "6dfc8412-8772-4663-8b54-6463ce9129d1"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "4a126e10-23bb-494c-8a98-8f9b5fa528d9",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
-                        "d7ddc071-421c-44f5-a3ee-4a46d1d34aa6"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "0b435d9a-6b71-42f5-90de-4ae346777634",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
-                        "3f2f2aa1-32d9-48c0-a1bb-2b0657037fe0"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "15d34a7c-ab6b-4dcf-8cc8-3a899ce959db",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "7911c70c-f2bb-4ad2-b1bc-0f7bf86a033f",
-                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "a187ee33-868b-439c-8c83-20cae769d5df",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "868887f2-757d-4524-8325-48a04c5fe1bd",
-                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "07ab54d5-1b2b-4142-8685-11c38508c9ac",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "439f8eb8-91cb-400d-b846-e20b16609794",
-                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "6e6b303c-0d69-4a25-b6c9-f74ad7baa23e",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "439f8eb8-91cb-400d-b846-e20b16609794",
-                        "88bf9190-f0bf-4f6f-8b6d-e71dac622f1f"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "4abb50bc-d90f-4b71-b256-cb6def97fbc1",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "88bf9190-f0bf-4f6f-8b6d-e71dac622f1f",
-                        "51032b14-4be7-4ab2-9445-99913464131d"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "e62dbe01-8793-4e31-8664-0ad4d7aa6671",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "7911c70c-f2bb-4ad2-b1bc-0f7bf86a033f",
-                        "f01d1af6-dfeb-43be-aae4-a4fa47ebd63d"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 900,00 мм x 2 100,00 мм",
-                    "Id": "512b4587-3ea8-464a-a43b-27d477c86ef3",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 2100.0,
-                    "Wide": 900.0,
-                    "Output": [
-                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
-                        "a30184ec-c799-448d-8024-90741b744769"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
-                    "Id": "ec3094f7-4006-4eb2-bf74-bac402e6b9be",
+                    "Name": "Дверь - (нет): 1 450,00 мм x 3 590,00 мм",
+                    "Id": "95f73ce7-8af7-4d92-887a-577c59a47ae5",
                     "Sign": "DoorWayInt",
                     "SizeZ": 3590.0,
-                    "Wide": 1500.0,
+                    "Wide": 1450.0,
                     "Output": [
-                        "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
-                        "85391e3d-08a5-4565-a910-31a8d3ba2190"
+                        "9b2524dc-c42d-409e-8957-a0435fc99f4f",
+                        "ca0f2ea8-5c6e-4481-88f3-52cbdd9e107f"
                     ]
                 },
                 {
-                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
-                    "Id": "c094f8be-5901-4714-8587-e0a7e3f5491f",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 3590.0,
-                    "Wide": 1500.0,
+                    "Id": "e1bc4e86-987c-4ca5-a6ab-e56c6283b1e6",
+                    "Name": "1 - Коридор",
                     "Output": [
-                        "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
-                        "357acdd7-9f1a-4ed6-bfd6-cc4f47ff0eab"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
-                    "Id": "02f3b2ba-80bb-4453-970e-e328e039fa86",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 3590.0,
-                    "Wide": 1500.0,
-                    "Output": [
-                        "419dc2b9-2d52-4366-9827-d868a06e7121",
-                        "a9f5cd10-ea96-4c56-8961-21aaf9c2307b"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 1 500,00 мм x 3 590,00 мм",
-                    "Id": "1a5a009e-7b0e-49da-aefd-6a6083781682",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 3590.0,
-                    "Wide": 1500.0,
-                    "Output": [
-                        "419dc2b9-2d52-4366-9827-d868a06e7121",
-                        "7747964e-b755-40ee-aaad-7651a285017a"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 1 409,00 мм x 3 590,00 мм",
-                    "Id": "15ed8ce5-645c-42a7-909e-5684c06c5ccf",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 3590.0,
-                    "Wide": 1409.0,
-                    "Output": [
-                        "f0298772-2224-476f-88ab-9f99dfc05c9b",
-                        "0db8d176-d0c4-475f-92ad-2c8d6427e44c"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 2 479,00 мм x 3 590,00 мм",
-                    "Id": "4daf1fc9-3e39-4f84-8e71-41550c0f6b81",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 3590.0,
-                    "Wide": 2479.0,
-                    "Output": [
-                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
-                        "f0298772-2224-476f-88ab-9f99dfc05c9b"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 2 479,00 мм x 3 590,00 мм",
-                    "Id": "42f78a90-1d3e-4e21-a7c2-6262a2fc13cb",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 3590.0,
-                    "Wide": 2479.0,
-                    "Output": [
-                        "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
-                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef"
-                    ]
-                },
-                {
-                    "Name": "Дверь - (нет): 1 489,00 мм x 3 590,00 мм",
-                    "Id": "c70272c3-75aa-4c99-847d-7306e2b64532",
-                    "Sign": "DoorWayInt",
-                    "SizeZ": 3590.0,
-                    "Wide": 1489.0,
-                    "Output": [
-                        "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
-                        "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a"
-                    ]
-                },
-                {
-                    "Id": "4b009e1a-b40f-417e-beec-1e2ac680d659",
-                    "Name": "1 - Класс",
-                    "Output": [
-                        "1662c792-0858-42c1-bc66-c0d3b3db78c7"
+                        "c50c8f7c-91cd-4700-9711-6cfe374c25ad",
+                        "8a7df27d-91e3-4185-999c-d85b65c25e29"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 49.8294,
+                    "Sroom": 9.794,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "b82331c0-5e93-4e0f-9644-f03522a860de",
-                    "Name": "2 - Класс",
+                    "Id": "2bd29766-f6b0-4277-8645-39f16d0984b0",
+                    "Name": "2 - Электрощитовая",
                     "Output": [
-                        "66bff5e5-be13-49ec-a029-928bf6f7bf69"
+                        "962817b9-d50b-4530-b890-4d2e54baab54"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 48.4747,
+                    "Sroom": 5.9,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "18ed65e9-a727-494f-96a3-43d99166f8e4",
-                    "Name": "3 - Класс",
+                    "Id": "b2db1a17-4abd-48c7-8074-886ca6cfd8ea",
+                    "Name": "3 - Склад",
                     "Output": [
-                        "3d37e1a5-d5de-48b7-aaea-b70195730d72"
+                        "dd80cb39-e131-4437-aaf4-19235451928c",
+                        "9ef4ea4e-8b55-4729-8a2c-832ef36ca4da"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 48.0624,
+                    "Sroom": 61.04,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "85b0b0ce-0e3a-4e3c-8d9d-dbbc179a4cb0",
-                    "Name": "4 - Класс",
+                    "Id": "7e20e1f1-03b5-47b9-b758-2cbe62a6db19",
+                    "Name": "4 - Склад",
                     "Output": [
-                        "db398ffd-9af3-4824-93fb-10a2269f2cf2"
+                        "9ef4ea4e-8b55-4729-8a2c-832ef36ca4da"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 47.8857,
+                    "Sroom": 14.88,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "6dfc8412-8772-4663-8b54-6463ce9129d1",
-                    "Name": "6 - Класс",
+                    "Id": "fbc00b67-7da6-4eba-9ef3-f6e778e4b1ad",
+                    "Name": "5 - Венткамера",
                     "Output": [
-                        "f87c363f-ad15-4f9a-a4bf-f395e81b7007"
+                        "dd80cb39-e131-4437-aaf4-19235451928c",
+                        "c50c8f7c-91cd-4700-9711-6cfe374c25ad",
+                        "962817b9-d50b-4530-b890-4d2e54baab54"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 48.4747,
+                    "Sroom": 73.416,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "d7ddc071-421c-44f5-a3ee-4a46d1d34aa6",
-                    "Name": "7 - Класс",
+                    "Id": "46e0c464-791e-4e3c-8303-e362236bedba",
+                    "Name": "6 - Лыжная база",
                     "Output": [
-                        "4a126e10-23bb-494c-8a98-8f9b5fa528d9"
+                        "eefb5066-1791-4d28-98f2-ba1f87707b64"
                     ],
                     "Sign": "Room",
                     "SizeZ": 3600.0,
-                    "Sroom": 46.9433,
+                    "Sroom": 81.176,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "3f2f2aa1-32d9-48c0-a1bb-2b0657037fe0",
-                    "Name": "8 - Класс",
-                    "Output": [
-                        "0b435d9a-6b71-42f5-90de-4ae346777634"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 49.7705,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "50258f99-5c61-470c-bf50-b5e6b5eba2b8",
-                    "Name": "5 - Класс",
-                    "Output": [
-                        "7a7d4052-4611-4ff5-805d-5f76461c64f5"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 48.298,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "439f8eb8-91cb-400d-b846-e20b16609794",
-                    "Name": "9 - Умывальная",
-                    "Output": [
-                        "07ab54d5-1b2b-4142-8685-11c38508c9ac",
-                        "6e6b303c-0d69-4a25-b6c9-f74ad7baa23e"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 2.9535,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "51032b14-4be7-4ab2-9445-99913464131d",
-                    "Name": "10 - Туалет",
-                    "Output": [
-                        "4abb50bc-d90f-4b71-b256-cb6def97fbc1"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 1.1216043,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "88bf9190-f0bf-4f6f-8b6d-e71dac622f1f",
-                    "Name": "11 - Туалет",
-                    "Output": [
-                        "6e6b303c-0d69-4a25-b6c9-f74ad7baa23e",
-                        "4abb50bc-d90f-4b71-b256-cb6def97fbc1"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 4.3307454,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "f01d1af6-dfeb-43be-aae4-a4fa47ebd63d",
-                    "Name": "12 - Туалет",
-                    "Output": [
-                        "e62dbe01-8793-4e31-8664-0ad4d7aa6671"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 5.6088,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "868887f2-757d-4524-8325-48a04c5fe1bd",
-                    "Name": "13 - Кладовая",
-                    "Output": [
-                        "a187ee33-868b-439c-8c83-20cae769d5df"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 2.7745,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "7911c70c-f2bb-4ad2-b1bc-0f7bf86a033f",
-                    "Name": "14 - Умывальная",
-                    "Output": [
-                        "15d34a7c-ab6b-4dcf-8cc8-3a899ce959db",
-                        "e62dbe01-8793-4e31-8664-0ad4d7aa6671"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 2.9535,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "323791cb-7b8c-4ead-8d2f-1f6dc4f6e4d1",
-                    "Name": "15 - Коридор",
-                    "Output": [
-                        "472b51a5-ea05-48b4-8398-7c9191309602",
-                        "202eaf26-ac5c-410d-a04d-88c07d1cc84d",
-                        "3d37e1a5-d5de-48b7-aaea-b70195730d72",
-                        "db398ffd-9af3-4824-93fb-10a2269f2cf2",
-                        "7a7d4052-4611-4ff5-805d-5f76461c64f5",
-                        "4daf1fc9-3e39-4f84-8e71-41550c0f6b81",
-                        "42f78a90-1d3e-4e21-a7c2-6262a2fc13cb"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 92.8636,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "a8f9093e-df28-4f3c-8117-0e5f594dd09c",
-                    "Name": "16 - Коридор",
-                    "Output": [
-                        "5cc44b32-0bec-4b22-b972-babe54518f10",
-                        "2d435fc9-1b00-49fb-8c09-c727e42b68cb"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 2.839,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "a9c1dd08-bc4e-46b4-961a-9892bbb91792",
-                    "Name": "17 - Кабинет",
-                    "Output": [
-                        "2d435fc9-1b00-49fb-8c09-c727e42b68cb"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 6.00355,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "05887f4b-ab63-49bb-94b4-6e21350f6edf",
-                    "Name": "18 - Подсобная",
-                    "Output": [
-                        "dda2b9b6-dcd9-4351-be89-65eab0968250"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 6.36055,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "633d3232-a64b-4acd-bc5d-06b8745294f1",
-                    "Name": "20 - Умывальная",
-                    "Output": [
-                        "dda2b9b6-dcd9-4351-be89-65eab0968250",
-                        "f80ceda2-8bd7-4d85-8501-72d363d08945"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 2.839,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "6816b054-ea64-44e8-a58b-f7d8d698d0cf",
-                    "Name": "21 - Санузел",
-                    "Output": [
-                        "d517f7f6-79d5-422e-93da-6cb24f52bee1"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 2.74715,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "a30184ec-c799-448d-8024-90741b744769",
-                    "Name": "24 - Гардероб",
-                    "Output": [
-                        "512b4587-3ea8-464a-a43b-27d477c86ef3"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 3600.0,
-                    "Sroom": 9.3324,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "3d51d44c-9742-47c7-b009-309d7ac1d7ef",
-                    "Name": "15 - Коридор",
-                    "Output": [
-                        "f87c363f-ad15-4f9a-a4bf-f395e81b7007",
-                        "4a126e10-23bb-494c-8a98-8f9b5fa528d9",
-                        "0b435d9a-6b71-42f5-90de-4ae346777634",
-                        "512b4587-3ea8-464a-a43b-27d477c86ef3",
-                        "42f78a90-1d3e-4e21-a7c2-6262a2fc13cb",
-                        "c70272c3-75aa-4c99-847d-7306e2b64532"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 2800.0,
-                    "Sroom": 84.5384,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "8bc7ad48-3e4e-4255-8763-6fa3d6fdbf0a",
-                    "Name": "15 - Коридор",
-                    "Output": [
-                        "15d34a7c-ab6b-4dcf-8cc8-3a899ce959db",
-                        "a187ee33-868b-439c-8c83-20cae769d5df",
-                        "07ab54d5-1b2b-4142-8685-11c38508c9ac",
-                        "c70272c3-75aa-4c99-847d-7306e2b64532"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 2800.0,
-                    "Sroom": 7.599,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "f0298772-2224-476f-88ab-9f99dfc05c9b",
-                    "Name": "15 - Коридор",
-                    "Output": [
-                        "1662c792-0858-42c1-bc66-c0d3b3db78c7",
-                        "66bff5e5-be13-49ec-a029-928bf6f7bf69",
-                        "15ed8ce5-645c-42a7-909e-5684c06c5ccf",
-                        "4daf1fc9-3e39-4f84-8e71-41550c0f6b81"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 2800.0,
-                    "Sroom": 94.1472,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "0db8d176-d0c4-475f-92ad-2c8d6427e44c",
-                    "Name": "15 - Коридор",
-                    "Output": [
-                        "5cc44b32-0bec-4b22-b972-babe54518f10",
-                        "d517f7f6-79d5-422e-93da-6cb24f52bee1",
-                        "f80ceda2-8bd7-4d85-8501-72d363d08945",
-                        "15ed8ce5-645c-42a7-909e-5684c06c5ccf"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 2800.0,
-                    "Sroom": 7.67745,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Id": "419dc2b9-2d52-4366-9827-d868a06e7121",
+                    "Id": "ca0f2ea8-5c6e-4481-88f3-52cbdd9e107f",
                     "Name": "1 - Помещение",
                     "Output": [
-                        "472b51a5-ea05-48b4-8398-7c9191309602",
-                        "02f3b2ba-80bb-4453-970e-e328e039fa86",
-                        "1a5a009e-7b0e-49da-aefd-6a6083781682"
+                        "8a7df27d-91e3-4185-999c-d85b65c25e29",
+                        "95f73ce7-8af7-4d92-887a-577c59a47ae5"
                     ],
                     "Sign": "Room",
                     "SizeZ": 2800.0,
-                    "Sroom": 4.466,
+                    "Sroom": 2.9795,
                     "Type": 0,
                     "NumPeople": 0,
                     "SignScenario": 0
                 },
                 {
-                    "Id": "2b4a760b-bc9c-45cb-afb5-ab80f62b01e6",
-                    "Name": "1 - Помещение",
-                    "Output": [
-                        "202eaf26-ac5c-410d-a04d-88c07d1cc84d",
-                        "ec3094f7-4006-4eb2-bf74-bac402e6b9be",
-                        "c094f8be-5901-4714-8587-e0a7e3f5491f"
-                    ],
-                    "Sign": "Room",
-                    "SizeZ": 2800.0,
-                    "Sroom": 4.466,
-                    "Type": 0,
-                    "NumPeople": 0,
-                    "SignScenario": 0
-                },
-                {
-                    "Name": "Лестница: 20 шт x 350,00 мм x 190,00 мм",
+                    "Name": "Лестница: 20 шт x 300,00 мм x 190,00 мм",
                     "SignScenario": 0,
-                    "Id": "85391e3d-08a5-4565-a910-31a8d3ba2190",
+                    "Id": "9b2524dc-c42d-409e-8957-a0435fc99f4f",
                     "Sign": "Staircase",
                     "Type": 0,
                     "SizeZ": 3800.0,
-                    "Wide": 1500.0,
-                    "Sroom": 16.2853385,
+                    "Wide": 1450.0,
+                    "Sroom": 14.2958172,
                     "NumPeople": 0,
                     "Output": [
-                        "cc1f1f2e-513e-4ae3-94dd-ffe33c3a4b66",
-                        "ec3094f7-4006-4eb2-bf74-bac402e6b9be"
-                    ]
-                },
-                {
-                    "Name": "Лестница: 20 шт x 350,00 мм x 190,00 мм",
-                    "SignScenario": 0,
-                    "Id": "a9f5cd10-ea96-4c56-8961-21aaf9c2307b",
-                    "Sign": "Staircase",
-                    "Type": 0,
-                    "SizeZ": 3800.0,
-                    "Wide": 1500.0,
-                    "Sroom": 16.2853385,
-                    "NumPeople": 0,
-                    "Output": [
-                        "0f51de4f-b4b2-4d22-94e1-2714dae2c26e",
-                        "02f3b2ba-80bb-4453-970e-e328e039fa86"
+                        "94228dfa-a6fd-4b40-b5e6-66d266269d5b",
+                        "95f73ce7-8af7-4d92-887a-577c59a47ae5"
                     ]
                 }
             ]
