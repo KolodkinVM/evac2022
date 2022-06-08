@@ -5,14 +5,14 @@ import java.util.ArrayList;
 import structure.BuildingPIM;
 import evacuate.Evacuation;
 
-public class Element {    //		  26.04.2022       27.05.2022
+public class Element {    //		  26.04.2022       07.06.2022
     //Область Outside (Safety zone) формируется на этапе создания помещений. Это зона вне здания, куда эвакуируются люди)
     public String Id;				// Уникальный Идентификатор элемента
     public double dPeople;			// Количество людей (текущее) в элементе, человек
     public String floor;			// Название уровня в здании
-    public double ZLevel;			// Значение уровня (этажа) помещения, мm
-    public double SizeZ;			// Высота элемента (Определено для Sign =  Staircase ), мm
-    public double Wide;				// Ширина портала (элемента) (Sign =  {  DoorWayOut,  DoorWayInt,  DoorWay}), мm
+    public double ZLevel;			// Значение уровня (этажа) помещения, м
+    public double SizeZ;			// Высота элемента (Определено для Sign =  Staircase ), м
+    public double Wide;				// Ширина портала (элемента) (Sign =  {  DoorWayOut,  DoorWayInt,  DoorWay}), м
     // DoorWay – Дверной проем
     public String Name;				// Название элемента в соответствии с планом
     public String Sign;				// Код элемента  Sign =  { Room, Staircase,  Outside, Safety zone} [ Постоянные коды ]
@@ -49,12 +49,10 @@ public class Element {    //		  26.04.2022       27.05.2022
     // ********* 24/05/2022 Общий список расчетных элементов (в частном случае помещений+порталов) по зданию
    public static ArrayList<graph.Element> getlistElement(structure.BuildingPIM building) {
        ArrayList<Element> listElement = new ArrayList<Element>();        // Список Element (Общий)
-       int kintegral = 0;            // Считаем число элементов в здании
        for (int kk = 0; kk < building.Level.length; kk++) {
            String floorElem = building.Level[kk].NameLevel;
            double ZLevelElem = building.Level[kk].ZLevel;
            for (int kkk = 0; kkk < building.Level[kk].BuildElement.length; kkk++) {
-               kintegral++;
                String idElem = building.Level[kk].BuildElement[kkk].Id;
                double dPeopleElem = 0;
                double SizeZElem = building.Level[kk].BuildElement[kkk].SizeZ;
@@ -84,7 +82,7 @@ public class Element {    //		  26.04.2022       27.05.2022
 
             //    ============			Печать характеристик элемента   28.07.2014        24/05/2022
     public static void ElementPrintFile(graph.Element elemx) {
-        Evacuation.Out_result.print(" Element-111= "+ elemx.Name+"   Id= "+elemx.Id+"   Sign= "+ elemx.Sign );
+        Evacuation.Out_result.print(" Element-85= "+ elemx.Name+"   Id= "+elemx.Id+"   Sign= "+ elemx.Sign );
         Evacuation.Out_result.println(" dPeople= "+ elemx.dPeople+"   Sroom= "+elemx.Sroom +"  Channel ="+elemx.numberOutput);
         Evacuation.Out_result.println(" (Elem90) List of Neigh = "  );
         for(int k=0; k< elemx.Neigh.size(); k++) Evacuation.Out_result.print(" ::  "+ elemx.Neigh.get(k));
@@ -96,12 +94,12 @@ public class Element {    //		  26.04.2022       27.05.2022
         Evacuation.Out_result.println("   (Element -96) Amount of Elements  " + listElement.size());
         Element xElem = new Element();
         Evacuation.Out_result.print("                Id                                         ");
-        Evacuation.Out_result.println("        ZLevel       SizeZ     Wide            Name	          Sign");
+        Evacuation.Out_result.println("            ZLevel          Sign        SizeZ     Wide            Name	      ");
  //       for (Element xElem : listElement) {
            for (int k = 0; k < listElement.size(); k++ ) { xElem = listElement.get(k);
                Evacuation.Out_result.print(" k= "+k);
- 		Evacuation.Out_result.format(" %1$40s     %2$5.1f      %3$5.1f  %4$5.1f        %5$20s   %6$10s   %n",
-				xElem.Id, xElem.ZLevel, xElem.SizeZ, xElem.Wide, xElem.Name, xElem.Sign  );
+ 		Evacuation.Out_result.format(" %1$40s     %2$8.1f    %3$15s    %4$8.1f  %5$8.1f        %6$20s     %n",
+				xElem.Id, xElem.ZLevel, xElem.Sign, xElem.SizeZ, xElem.Wide, xElem.Name );
               Evacuation.Out_result.println("   List of Neigh " );
             for(int kN=0; kN <xElem.Neigh.size(); kN++) Evacuation.Out_result.print("  "+ xElem.Neigh.get(kN)+"   ");
             Evacuation.Out_result.println();}

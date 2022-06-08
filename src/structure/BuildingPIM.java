@@ -11,6 +11,12 @@ public class BuildingPIM {
     public String nameBuilding;         // Общее название здания
     public String program_name;         // Программа создания файла Json
     public String version_program;      // Версия (дата последней модификации программы)
+
+    public int numberOfRoom;
+    public int numberOfDoor;
+    public int numberofDoorWayInt;
+    public int numberOfDoorWayOut;
+    public int numberOfStaircase;
     public String date_creation_Json;           // Дата создания файла Json
     public Address_Building address_building;     //  Адресные данные
     public Level_Building[] Level;               //  Класс уровней здания
@@ -27,7 +33,7 @@ public class BuildingPIM {
     //       * Внутренний класс для указания уровней здания - Level_Bilding.
     public class Level_Building {
         public String NameLevel;                // Имя уровня\
-        public double ZLevel;                   //Положение уровня по высоте, мм
+        public double ZLevel;                   //Положение уровня по высоте, м
         public Element_Json[] BuildElement;
 
         //       * Внутренний класс для указания элемента Json - Element_Json.
@@ -35,8 +41,8 @@ public class BuildingPIM {
             public String Name;                  // Имя элемента
             public String Id;                    // Id элемента
             public String Sign;                  // Код элемента
-            public double  SizeZ;                // Размер по высоте элемента, мм
-            public double   Wide;                 // Размер по ширине элемента, мм
+            public double  SizeZ;                // Размер по высоте элемента, м
+            public double   Wide;                 // Размер по ширине элемента, м
             public double   Sroom;                // Площадь, м*м
             public String[] Output;             // Список указателей на элементы
         }
@@ -44,10 +50,13 @@ public class BuildingPIM {
 
 
  public static void printJson(BuildingPIM build) {
-     System.out.println("  (BuildingPIM -47)   	nameBuilding  " + build.nameBuilding+"     program_name  " + build.program_name);
+     System.out.println("  (BuildingPIM -53)   	nameBuilding  " + build.nameBuilding+"     program_name  " + build.program_name);
+     System.out.println("  (BuildingPIM -54)   	numberOfRoom  " + build.numberOfRoom+"     numberOfDoor  " + build.numberOfDoor);
+     System.out.println("  (BuildingPIM -55)   	numberofDoorWayInt  " + build.numberofDoorWayInt+
+             "     numberOfDoorWayOut  " + build.numberOfDoorWayOut+"     numberOfStaircase  " + build.numberOfStaircase);
       for (int kk = 0; kk < build.Level.length; kk++) {
          System.out.println(" Level[kk].NameLevel    " + build.Level[kk].NameLevel);
-         System.out.println(" Level[kk].ZLevel    " + build.Level[kk].ZLevel + " mm");
+         System.out.println(" Level[kk].ZLevel    " + build.Level[kk].ZLevel + " m");
          for (int kkk = 0; kkk < build.Level[kk].BuildElement.length; kkk++) {
              System.out.println(" build.Level[kk].BuildElement[kkk].Name     " + build.Level[kk].BuildElement[kkk].Name);
              System.out.println(" build.Level[kk].BuildElement[kkk].Id    " + build.Level[kk].BuildElement[kkk].Id);

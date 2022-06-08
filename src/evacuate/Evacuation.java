@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -32,10 +33,11 @@ public class Evacuation {         // 28.04.2014  31.05.2022
 
     public static void main(String[] args) {
         final String outputLocation = "C:/Users/KolodkinVM/Documents/A3-Work2022/"; // Директория локализации файлов с результатами
-        final String jsonLocation = "source/vmtest2.json"; // Json - файл со зданием тестовое здание
+ //       final String jsonLocation = "source/vmtest2.json"; // Json - файл со зданием тестовое здание
+        final String jsonLocation = "source/Common.json"; // Json - файл со зданием тестовое здание
         final LoadJson loadingJson = new LoadJson(jsonLocation); // Десериализуем файл json
         building = loadingJson.getBuilding();
-        BuildingPIM.printJson(building); // lkjtg
+ //       BuildingPIM.printJson(building);
 
      //   final ElementsInitialization initElementsLists = new ElementsInitialization(building); // Собираем списки элементов
 //        final StatusBarData barData = new StatusBarData();
@@ -45,6 +47,8 @@ public class Evacuation {         // 28.04.2014  31.05.2022
         ArrayList<Element> listElement = new ArrayList<Element>();
         listElement = graph.Element.getlistElement(building);   // Формирование общего списка элементов
         Element.printlistElement(listElement);                  // Печать списка элементов
+        HashMap<String, structure.Rooms> roomsMap = new HashMap<>();
+     //   roomsMap = structure.Rooms.getRooms(listElement);
         System.out.println("   Evacuation -50 ");
         // --------------------------------------------------------//
 
